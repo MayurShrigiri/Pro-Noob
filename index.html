@@ -151,15 +151,12 @@
             border-color: var(--color-text);
             color: var(--color-text);
         }
-        .placeholder-icon {
-            font-size: 3rem;
-            font-weight: 400;
-            line-height: 1;
-        }
+        
+        /* Removed the .placeholder-icon CSS block as it's no longer needed */
+        
         .placeholder-text {
             font-size: 1.1rem;
             font-weight: 600;
-            margin-top: 0.5rem;
         }
 
         /* Player Image: Sits on top of the card */
@@ -268,10 +265,11 @@
              * Creates the HTML string for a single player card.
              */
             function createCardHTML(index) {
+                // --- MODIFIED ---
+                // Removed the <span class="placeholder-icon">+</span>
                 return `
                     <div class="player-card" data-card="${index}">
                         <div class="placeholder-content">
-                            <span class="placeholder-icon">+</span>
                             <span class="placeholder-text">Upload Photo</span>
                         </div>
                         
